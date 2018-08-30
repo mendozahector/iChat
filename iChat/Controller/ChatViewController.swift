@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ChatViewController: UIViewController {
 
@@ -21,7 +22,17 @@ class ChatViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func logoutButtonPressed(_ sender: Any) {
+        
+        do {
+            try Auth.auth().signOut()
+            self.dismiss(animated: true, completion: nil)
+        } catch {
+            // cannot logout
+        }
+        
+    }
+    
     /*
     // MARK: - Navigation
 

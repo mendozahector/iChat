@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E2814B621379D9900BBC85C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2814B521379D9900BBC85C /* ChatViewController.swift */; };
+		3E7BF3112137A12B0089F206 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E7BF3102137A12B0089F206 /* GoogleService-Info.plist */; };
 		3EA8DD0921376963004FE742 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8DD0821376963004FE742 /* RegisterViewController.swift */; };
 		3EA8DD0C21378368004FE742 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8DD0B21378368004FE742 /* LoginViewController.swift */; };
 		3EB158A6212FB50F00D25939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB158A5212FB50F00D25939 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		3E2814B521379D9900BBC85C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		3E7BF3102137A12B0089F206 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3EA8DD0821376963004FE742 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3EA8DD0B21378368004FE742 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3EB158A2212FB50F00D25939 /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 				3E2814B921379DB700BBC85C /* Controller */,
 				3EB158AC212FB51200D25939 /* Assets.xcassets */,
 				3EB158B1212FB51200D25939 /* Info.plist */,
+				3E7BF3102137A12B0089F206 /* GoogleService-Info.plist */,
 			);
 			path = iChat;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EB158B0212FB51200D25939 /* LaunchScreen.storyboard in Resources */,
+				3E7BF3112137A12B0089F206 /* GoogleService-Info.plist in Resources */,
 				3EB158AD212FB51200D25939 /* Assets.xcassets in Resources */,
 				3EB158AB212FB50F00D25939 /* Main.storyboard in Resources */,
 			);
@@ -216,14 +220,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iChat/Pods-iChat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

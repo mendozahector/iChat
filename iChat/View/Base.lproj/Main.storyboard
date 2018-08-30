@@ -63,7 +63,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="Sii-n8-BV3" kind="show" identifier="goToChat" id="17y-Ij-4ec"/>
+                        <segue destination="Sii-n8-BV3" kind="show" identifier="goToChatView" id="17y-Ij-4ec"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -181,6 +181,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerButtonPressed:" destination="MM3-kF-U8f" eventType="touchUpInside" id="5CF-BA-N2O"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -193,6 +196,8 @@
                         <viewLayoutGuide key="safeArea" id="bYi-vt-73B"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="eFa-NZ-wPY" id="dn3-Pd-m3P"/>
+                        <outlet property="passwordTextField" destination="Is1-BY-pwr" id="Wzi-3E-rN0"/>
                         <segue destination="Sii-n8-BV3" kind="show" identifier="goToChatView" id="ogS-zk-K8R"/>
                     </connections>
                 </viewController>
@@ -203,7 +208,7 @@
         <!--ChatViewController-->
         <scene sceneID="Ihx-Ge-lfj">
             <objects>
-                <viewController title="ChatViewController" id="Sii-n8-BV3" sceneMemberID="viewController">
+                <viewController title="ChatViewController" id="Sii-n8-BV3" customClass="ChatViewController" customModule="iChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2fN-P0-cTh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,6 +228,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="Sii-n8-BV3" eventType="touchUpInside" id="T5T-tl-SG4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -244,6 +252,6 @@
         <image name="background" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ogS-zk-K8R"/>
+        <segue reference="17y-Ij-4ec"/>
     </inferredMetricsTieBreakers>
 </document>
