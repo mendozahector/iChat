@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E2814B621379D9900BBC85C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2814B521379D9900BBC85C /* ChatViewController.swift */; };
+		3EA8DD0921376963004FE742 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8DD0821376963004FE742 /* RegisterViewController.swift */; };
+		3EA8DD0C21378368004FE742 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8DD0B21378368004FE742 /* LoginViewController.swift */; };
 		3EB158A6212FB50F00D25939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB158A5212FB50F00D25939 /* AppDelegate.swift */; };
-		3EB158A8212FB50F00D25939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB158A7212FB50F00D25939 /* ViewController.swift */; };
+		3EB158A8212FB50F00D25939 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB158A7212FB50F00D25939 /* WelcomeViewController.swift */; };
 		3EB158AB212FB50F00D25939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB158A9212FB50F00D25939 /* Main.storyboard */; };
 		3EB158AD212FB51200D25939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB158AC212FB51200D25939 /* Assets.xcassets */; };
 		3EB158B0212FB51200D25939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB158AE212FB51200D25939 /* LaunchScreen.storyboard */; };
@@ -16,9 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E2814B521379D9900BBC85C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		3EA8DD0821376963004FE742 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3EA8DD0B21378368004FE742 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3EB158A2212FB50F00D25939 /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB158A5212FB50F00D25939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3EB158A7212FB50F00D25939 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EB158A7212FB50F00D25939 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3EB158AA212FB50F00D25939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EB158AC212FB51200D25939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EB158AF212FB51200D25939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +46,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E2814B721379DA300BBC85C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E2814B821379DAA00BBC85C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EB158A9212FB50F00D25939 /* Main.storyboard */,
+				3EB158AE212FB51200D25939 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E2814B921379DB700BBC85C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EB158A7212FB50F00D25939 /* WelcomeViewController.swift */,
+				3EA8DD0821376963004FE742 /* RegisterViewController.swift */,
+				3EA8DD0B21378368004FE742 /* LoginViewController.swift */,
+				3E2814B521379D9900BBC85C /* ChatViewController.swift */,
+				3EB158A5212FB50F00D25939 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		3EB15899212FB50E00D25939 = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +95,10 @@
 		3EB158A4212FB50F00D25939 /* iChat */ = {
 			isa = PBXGroup;
 			children = (
-				3EB158A5212FB50F00D25939 /* AppDelegate.swift */,
-				3EB158A7212FB50F00D25939 /* ViewController.swift */,
-				3EB158A9212FB50F00D25939 /* Main.storyboard */,
+				3E2814B721379DA300BBC85C /* Model */,
+				3E2814B821379DAA00BBC85C /* View */,
+				3E2814B921379DB700BBC85C /* Controller */,
 				3EB158AC212FB51200D25939 /* Assets.xcassets */,
-				3EB158AE212FB51200D25939 /* LaunchScreen.storyboard */,
 				3EB158B1212FB51200D25939 /* Info.plist */,
 			);
 			path = iChat;
@@ -204,7 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EB158A8212FB50F00D25939 /* ViewController.swift in Sources */,
+				3EA8DD0C21378368004FE742 /* LoginViewController.swift in Sources */,
+				3EA8DD0921376963004FE742 /* RegisterViewController.swift in Sources */,
+				3EB158A8212FB50F00D25939 /* WelcomeViewController.swift in Sources */,
+				3E2814B621379D9900BBC85C /* ChatViewController.swift in Sources */,
 				3EB158A6212FB50F00D25939 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
